@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coupon 1</title>
+
+
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+    <style>
+        .card{
+         width: 300px;
+         height: 60px;
+         position: relative;
+         box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+        margin: 10px auto;
+        }    
+        
+      .base, #scratch {
+        cursor: default;
+        height: 60px;
+        width: 300px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          cursor: grabbing;
+      }
+      .base {
+        line-height: 60px;
+        text-align: center;
+      }
+      #scratch {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+      }
+    </style>
+    
+</head>
+ <body>
+	<header class="intro">
+	</header>
+<main>
+ <article>
+	<p>Scratch coupon to see your gift</p>
+    <div class="card">
+    <div class="base">Witness a singing performace by Harsh.
+    </div>
+    <canvas id="scratch" width="300" height="60"></canvas>
+    </div>
+    </article>
+</main>
+
+<footer class="credit">With Love from Harsh to Tanu </footer>
+
+<!-- scratch-card-with-canvas JS -->
+<script src="js/scratch-card.js"></script>
+     
+ </body>
+</html>
